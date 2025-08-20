@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Medical Terminology Hub - Free Interactive Flashcards for Medical Students</title>
+    <meta name="description" content="Learn medical terminology with free interactive flashcards. 50+ medical terms across cardiovascular, respiratory, neurology, and more specialties. Perfect for medical students and healthcare professionals.">
+    <meta name="keywords" content="medical terminology, medical flashcards, medical education, healthcare learning, medical students, nursing students, medical terms, medical vocabulary, anatomy terms, medical abbreviations">
+    <meta name="author" content="Medical Terminology Hub">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://magenta-melomakarona-7fcb4c.netlify.app/">
+    <meta property="og:title" content="Medical Terminology Hub - Free Interactive Flashcards">
+    <meta property="og:description" content="Learn medical terminology with interactive flashcards. 50+ terms across multiple medical specialties. Free educational resource for medical students.">
+    <meta property="og:image" content="https://magenta-melomakarona-7fcb4c.netlify.app/medical-hub-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Medical Terminology Hub">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://magenta-melomakarona-7fcb4c.netlify.app/">
+    <meta property="twitter:title" content="Medical Terminology Hub - Free Interactive Flashcards">
+    <meta property="twitter:description" content="Learn medical terminology with interactive flashcards. 50+ terms across multiple medical specialties.">
+    <meta property="twitter:image" content="https://magenta-melomakarona-7fcb4c.netlify.app/medical-hub-preview.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://magenta-melomakarona-7fcb4c.netlify.app/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Medical Terminology Hub",
+      "description": "Free interactive medical terminology flashcards for medical students and healthcare professionals",
+      "url": "https://magenta-melomakarona-7fcb4c.netlify.app/",
+      "sameAs": [
+        "https://github.com/EdoCodes/MedicalTerminologyHub"
+      ],
+      "educationalLevel": "Higher Education",
+      "about": {
+        "@type": "Thing",
+        "name": "Medical Education"
+      },
+      "teaches": [
+        "Medical Terminology",
+        "Healthcare Vocabulary",
+        "Medical Abbreviations",
+        "Anatomy Terms"
+      ],
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": ["student", "healthcare professional", "medical student", "nursing student"]
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background: #1a365d;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: #63b3ed;
+        }
+
+        /* Main Layout */
+        .main-layout {
+            margin-top: 80px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 250px 1fr 250px;
+            gap: 20px;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Sidebars */
+        .left-sidebar, .right-sidebar {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+
+        .sidebar-title {
+            color: #1a365d;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .sidebar-section {
+            margin-bottom: 25px;
+        }
+
+        .sidebar-section h4 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .sidebar-section ul {
+            list-style: none;
+        }
+
+        .sidebar-section ul li {
+            margin-bottom: 8px;
+            padding: 8px 12px;
+            background: #f7fafc;
+            border-radius: 6px;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+
+        .sidebar-section ul li:hover {
+            background: #e2e8f0;
+        }
+
+        .quick-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 10px;
+            background: #f7fafc;
+            border-radius: 6px;
+        }
+
+        .stat-number {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #3182ce;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #718096;
+        }
+
+        /* Main Content */
+        .main-content {
+            min-height: 600px;
+        }
+
+        .flashcards-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .category-selector {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+        }
+
+        .category-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .category-tab {
+            padding: 8px 16px;
+            background: #e2e8f0;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .category-tab.active {
+            background: #3182ce;
+            color: white;
+        }
+
+        .category-tab:hover {
+            background: #cbd5e0;
+        }
+
+        .category-tab.active:hover {
+            background: #2c5282;
+        }
+
+        h1 {
+            color: #1a365d;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        .search-and-card-container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .search-section {
+            flex: 1;
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+            max-height: 500px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #cbd5e0;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-family: 'Times New Roman', serif;
+            transition: all 0.3s ease;
+            outline: none;
+            margin-bottom: 20px;
+        }
+
+        .search-input:focus {
+            border-color: #3182ce;
+            box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+        }
+
+        .definition-display {
+            background: #f7fafc;
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 180px;
+            border-left: 4px solid #3182ce;
+            border: 1px solid #e2e8f0;
+        }
+
+        .term-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 12px;
+        }
+
+        .definition-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 12px;
+        }
+
+        .example-text {
+            font-style: italic;
+            color: #7f8c8d;
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 3px solid #95a5a6;
+        }
+
+        /* Flashcard Section */
+        .flashcard-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card-stack-info {
+            text-align: center;
+            margin-bottom: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .stack-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #1a365d;
+            margin-bottom: 5px;
+        }
+
+        .card-counter {
+            font-size: 0.9rem;
+            color: #718096;
+        }
+
+        .flashcard {
+            width: 400px;
+            height: 280px;
+            perspective: 1000px;
+            cursor: pointer;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .flashcard-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flashcard.flipped .flashcard-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-front, .flashcard-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            border: 2px solid #e2e8f0;
+        }
+
+        .flashcard-front {
+            background: white;
+            color: #2d3748;
+            background-image: 
+                repeating-linear-gradient(
+                    transparent,
+                    transparent 24px,
+                    #e2e8f0 24px,
+                    #e2e8f0 26px
+                );
+        }
+
+        .flashcard-back {
+            background: white;
+            color: #2d3748;
+            transform: rotateY(180deg);
+        }
+
+        .card-content {
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            font-family: 'Times New Roman', serif;
+            position: relative;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .card-hint {
+            position: absolute;
+            bottom: 15px;
+            font-size: 0.8rem;
+            opacity: 0.6;
+            color: #718096;
+            z-index: 3;
+        }
+
+        .card-navigation {
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+            margin-top: 15px;
+        }
+
+        .nav-button {
+            background: #3182ce;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .nav-button:hover {
+            background: #2c5282;
+        }
+
+        .nav-button:disabled {
+            background: #cbd5e0;
+            cursor: not-allowed;
+        }
+
+        .no-results {
+            text-align: center;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 30px;
+        }
+
+        /* SEO Content Section */
+        .seo-content {
+            background: white;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+        }
+
+        .seo-content h2 {
+            color: #1a365d;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .seo-content h3 {
+            color: #2d3748;
+            margin: 20px 0 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .seo-content p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: #4a5568;
+        }
+
+        .medical-terms-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .term-item {
+            background: #f7fafc;
+            padding: 10px;
+            border-radius: 6px;
+            border-left: 3px solid #3182ce;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .main-layout {
+                grid-template-columns: 200px 1fr 200px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .left-sidebar, .right-sidebar {
+                position: static;
+                order: 2;
+            }
+            
+            .main-content {
+                order: 1;
+            }
+            
+            .search-and-card-container {
+                flex-direction: column;
+            }
+            
+            .flashcard, .card-navigation {
+                width: 300px;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Medical Terminology Hub</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#flashcards" aria-label="Medical Flashcards">Flashcards</a></li>
+                    <li><a href="#about" aria-label="About Medical Hub">About</a></li>
+                    <li><a href="#contact" aria-label="Contact Information">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+        <!-- Left Sidebar -->
+        <aside class="left-sidebar" role="complementary" aria-label="Study Tools">
+            <h3 class="sidebar-title">📊 Study Progress</h3>
+            
+            <div class="sidebar-section">
+                <h4>Current Session</h4>
+                <div class="quick-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="cardsStudied">0</div>
+                        <div class="stat-label">Cards Studied</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="correctAnswers">0</div>
+                        <div class="stat-label">Correct</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h4>Quick Access</h4>
+                <ul>
+                    <li>🎴 Interactive Flashcards</li>
+                    <li>📖 Study Materials</li>
+                    <li>📚 Medical Dictionary</li>
+                    <li>🎯 Practice Quiz</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h4>Medical Categories</h4>
+                <ul>
+                    <li onclick="switchCategory('cardiovascular')">❤️ Cardiovascular</li>
+                    <li onclick="switchCategory('respiratory')">🫁 Respiratory</li>
+                    <li onclick="switchCategory('neurology')">🧠 Neurology</li>
+                    <li onclick="switchCategory('dermatology')">🩺 Dermatology</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content" role="main">
+            <div class="category-selector">
+                <h1>Free Medical Terminology Flashcards for Students</h1>
+                <div class="category-tabs" role="tablist" aria-label="Medical specialty categories">
+                    <button class="category-tab active" role="tab" aria-selected="true" onclick="switchCategory('cardiovascular')">Cardiovascular</button>
+                    <button class="category-tab" role="tab" aria-selected="false" onclick="switchCategory('respiratory')">Respiratory</button>
+                    <button class="category-tab" role="tab" aria-selected="false" onclick="switchCategory('musculoskeletal')">Musculoskeletal</button>
+                    <button class="category-tab" role="tab" aria-selected="false" onclick="switchCategory('neurology')">Neurology</button>
+                    <button class="category-tab" role="tab" aria-selected="false" onclick="switchCategory('dermatology')">Dermatology</button>
+                    <button class="category-tab" role="tab" aria-selected="false" onclick="switchCategory('gastroenterology')">Gastroenterology</button>
+                </div>
+            </div>
+
+            <div class="search-and-card-container">
+                <div class="search-section">
+                    <div class="search-container">
+                        <label for="searchInput" class="sr-only">Search medical terms</label>
+                        <input type="text" class="search-input" placeholder="Search for a medical term..." id="searchInput" aria-label="Search medical terminology">
+                    </div>
+                    <div class="definition-display" id="definitionDisplay" role="region" aria-live="polite" aria-label="Medical term definition">
+                        <div class="no-results">Select a category and search for medical terms, or browse the flashcards.</div>
+                    </div>
+                </div>
+
+                <div class="flashcard-section">
+                    <div class="card-stack-info">
+                        <div class="stack-title" id="stackTitle">Cardiovascular System</div>
+                        <div class="card-counter" id="cardCounter">Card 1 of 25</div>
+                    </div>
+
+                    <div class="flashcard" id="flashcard" onclick="flipCard()" role="button" aria-label="Medical terminology flashcard - click to flip" tabindex="0">
+                        <div class="flashcard-inner">
+                            <div class="flashcard-front">
+                                <div class="card-content" id="cardDefinition">
+                                    High blood pressure; a condition in which the force of blood against artery walls is too high
+                                </div>
+                                <div class="card-hint">Click to reveal term</div>
+                            </div>
+                            <div class="flashcard-back">
+                                <div class="card-content" id="cardTerm">
+                                    Hypertension
+                                </div>
+                                <div class="card-hint">Click for next card</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-navigation">
+                        <button class="nav-button" onclick="previousCard()" id="prevButton" aria-label="Previous flashcard">← Previous</button>
+                        <button class="nav-button" onclick="nextCard()" id="nextButton" aria-label="Next flashcard">Next →</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar" role="complementary" aria-label="Medical Reference">
+            <h3 class="sidebar-title">📋 Quick Reference</h3>
+            
+            <div class="sidebar-section">
+                <h4>Medical Prefixes</h4>
+                <ul>
+                    <li><strong>Cardio-</strong> Heart</li>
+                    <li><strong>Neuro-</strong> Nerve</li>
+                    <li><strong>Gastro-</strong> Stomach</li>
+                    <li><strong>Pulmo-</strong> Lung</li>
+                    <li><strong>Hemato-</strong> Blood</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h4>Medical Suffixes</h4>
+                <ul>
+                    <li><strong>-itis</strong> Inflammation</li>
+                    <li><strong>-osis</strong> Condition</li>
+                    <li><strong>-pathy</strong> Disease</li>
+                    <li><strong>-ology</strong> Study of</li>
+                    <li><strong>-ectomy</strong> Removal</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h4>Common Medical Abbreviations</h4>
+                <ul>
+                    <li><strong>BP</strong> Blood Pressure</li>
+                    <li><strong>HR</strong> Heart Rate</li>
+                    <li><strong>CBC</strong> Complete Blood Count</li>
+                    <li><strong>ECG</strong> Electrocardiogram</li>
+                    <li><strong>MRI</strong> Magnetic Resonance Imaging</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h4>Study Tips</h4>
+                <ul>
+                    <li>💡 Review daily for retention</li>
+                    <li>🔄 Use spaced repetition</li>
+                    <li>📚 Make word associations</li>
+                    <li>👥 Study with peers</li>
+                    <li>🎓 Practice regularly</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <!-- SEO Content Section -->
+    <section class="seo-content">
+        <h2>Learn Medical Terminology with Interactive Flashcards</h2>
+        <p>Master medical terminology with our comprehensive collection of interactive flashcards designed specifically for medical students, nursing students, and healthcare professionals. Our platform offers over 50 medical terms across multiple specialties including cardiovascular, respiratory, neurology, dermatology, musculoskeletal, and gastroenterology.</p>
+        
+        <h3>Why Choose Our Medical Terminology Hub?</h3>
+        <p>Our medical flashcards platform provides an engaging and effective way to learn medical vocabulary. Each term includes detailed definitions, clinical examples, and real-world usage scenarios that help students understand how medical terminology is applied in healthcare settings.</p>
+        
+        <h3>Medical Specialties Covered</h3>
+        <div class="medical-terms-list">
+            <div class="term-item"><strong>Cardiovascular:</strong> Heart and circulation terms</div>
+            <div class="term-item"><strong>Respiratory:</strong> Lung and breathing terminology</div>
+            <div class="term-item"><strong>Neurology:</strong> Brain and nervous system</div>
+            <div class="term-item"><strong>Dermatology:</strong> Skin conditions and treatments</div>
+            <div class="term-item"><strong>Musculoskeletal:</strong> Bones, muscles, and joints</div>
+            <div class="term-item"><strong>Gastroenterology:</strong> Digestive system disorders</div>
+        </div>
+        
+        <h3>Features for Medical Students</h3>
+        <p>Our platform includes study progress tracking, quick reference guides for medical prefixes and suffixes, common medical abbreviations, and keyboard shortcuts for efficient studying. The responsive design ensures you can study on any device, whether you're in the library, clinic, or on the go.</p>
+        
+        <h3>Perfect for Healthcare Education</h3>
+        <p>Whether you're a pre-med student, nursing student, medical assistant, or healthcare professional looking to refresh your knowledge, our medical terminology flashcards provide a solid foundation in healthcare vocabulary. The interactive format makes learning engaging and helps improve retention of complex medical terms.</p>
+    </section>
+
+    <script>
+        // Medical Terms Database with enhanced content for SEO
+        const medicalTermsByCategory = {
+            cardiovascular: [
+                {
+                    term: "hypertension",
+                    definition: "High blood pressure; a condition in which the force of blood against artery walls is too high.",
+                    example: "Regular exercise and a low-sodium diet can help manage hypertension."
+                },
+                {
+                    term: "tachycardia",
+                    definition: "A rapid heart rate, typically defined as over 100 beats per minute in adults.",
+                    example: "The patient experienced tachycardia during the stress test, with a heart rate of 120 bpm."
+                },
+                {
+                    term: "bradycardia",
+                    definition: "A slower than normal heart rate, typically under 60 beats per minute in adults.",
+                    example: "Athletes often have bradycardia due to their excellent cardiovascular conditioning."
+                },
+                {
+                    term: "myocardial infarction",
+                    definition: "A heart attack; occurs when blood flow decreases or stops to a part of the heart, causing damage to the heart muscle.",
+                    example: "The patient was rushed to the emergency room with symptoms of acute myocardial infarction."
+                },
+                {
+                    term: "angina",
+                    definition: "Chest pain caused by reduced blood flow to the heart muscles.",
+                    example: "The patient experienced angina pectoris during physical exertion."
+                },
+                {
+                    term: "atrial fibrillation",
+                    definition: "Irregular, rapid heartbeat that can lead to poor blood circulation.",
+                    example: "Atrial fibrillation increases the risk of stroke and requires anticoagulation therapy."
+                },
+                {
+                    term: "ischemia",
+                    definition: "Inadequate blood supply to an organ or part of the body.",
+                    example: "Myocardial ischemia can lead to chest pain and heart muscle damage."
+                },
+                {
+                    term: "thrombosis",
+                    definition: "The formation of a blood clot inside a blood vessel.",
+                    example: "Deep vein thrombosis in the leg can lead to pulmonary embolism."
+                },
+                {
+                    term: "palpitation",
+                    definition: "The feeling of having a fast-beating, fluttering, or pounding heart.",
+                    example: "The patient reported palpitations during episodes of anxiety."
+                },
+                {
+                    term: "syncope",
+                    definition: "A temporary loss of consciousness due to insufficient blood flow to the brain.",
+                    example: "Vasovagal syncope is the most common cause of fainting episodes."
+                }
+            ],
+            respiratory: [
+                {
+                    term: "pneumonia",
+                    definition: "An infection that inflames air sacs in one or both lungs, which may fill with fluid.",
+                    example: "Bacterial pneumonia often requires antibiotic treatment and hospitalization."
+                },
+                {
+                    term: "asthma",
+                    definition: "A respiratory condition marked by attacks of spasm in the bronchi of the lungs, causing difficulty in breathing.",
+                    example: "The child's asthma was triggered by exposure to dust mites and pollen."
+                },
+                {
+                    term: "bronchitis",
+                    definition: "Inflammation of the lining of bronchial tubes, causing cough and mucus production.",
+                    example: "Acute bronchitis is often caused by viral infections and resolves within weeks."
+                },
+                {
+                    term: "dyspnea",
+                    definition: "Difficulty breathing or shortness of breath.",
+                    example: "The patient complained of dyspnea when climbing stairs."
+                },
+                {
+                    term: "cyanosis",
+                    definition: "A bluish discoloration of the skin due to lack of oxygen in the blood.",
+                    example: "The newborn showed cyanosis around the lips, indicating possible heart problems."
+                }
+            ],
+            musculoskeletal: [
+                {
+                    term: "arthritis",
+                    definition: "Inflammation of one or more joints, causing pain and stiffness that can worsen with age.",
+                    example: "The patient was diagnosed with rheumatoid arthritis after experiencing joint pain for several months."
+                },
+                {
+                    term: "osteoporosis",
+                    definition: "A bone disease that occurs when the body loses too much bone or makes too little bone.",
+                    example: "Post-menopausal women are at higher risk for developing osteoporosis."
+                },
+                {
+                    term: "fracture",
+                    definition: "A break in a bone caused by trauma or disease.",
+                    example: "The X-ray revealed a spiral fracture of the tibia."
+                }
+            ],
+            neurology: [
+                {
+                    term: "stroke",
+                    definition: "Sudden interruption of blood supply to the brain, causing brain cell death.",
+                    example: "Quick treatment is crucial for stroke patients to minimize brain damage."
+                },
+                {
+                    term: "seizure",
+                    definition: "Sudden, uncontrolled electrical disturbance in the brain.",
+                    example: "Epileptic seizures can vary from brief lapses to violent convulsions."
+                },
+                {
+                    term: "migraine",
+                    definition: "Severe recurring headache often accompanied by nausea and light sensitivity.",
+                    example: "Migraine attacks can last from hours to days."
+                }
+            ],
+            dermatology: [
+                {
+                    term: "dermatitis",
+                    definition: "Inflammation of the skin causing redness, swelling, and itching.",
+                    example: "Contact dermatitis can be caused by allergens or irritants."
+                },
+                {
+                    term: "melanoma",
+                    definition: "The most serious type of skin cancer that develops in melanocytes.",
+                    example: "Early detection of melanoma significantly improves treatment outcomes."
+                },
+                {
+                    term: "psoriasis",
+                    definition: "Autoimmune skin condition causing scaly, red patches.",
+                    example: "Plaque psoriasis is the most common form of this condition."
+                }
+            ],
+            gastroenterology: [
+                {
+                    term: "gastritis",
+                    definition: "Inflammation of the stomach lining, causing pain and digestive issues.",
+                    example: "Chronic gastritis can be caused by H. pylori bacteria or prolonged NSAID use."
+                },
+                {
+                    term: "jaundice",
+                    definition: "Yellowing of the skin and eyes due to high levels of bilirubin in the blood.",
+                    example: "Neonatal jaundice is common in newborns and usually resolves without treatment."
+                },
+                {
+                    term: "appendicitis",
+                    definition: "Inflammation of the appendix requiring surgical removal.",
+                    example: "Acute appendicitis typically begins with periumbilical pain."
+                }
+            ]
+        };
+
+        // Current state
+        let currentCategory = 'cardiovascular';
+        let currentCardIndex = 0;
+        let isFlipped = false;
+        let studyStats = {
+            cardsStudied: 0,
+            correctAnswers: 0
+        };
+
+        // Functions
+        function switchCategory(category) {
+            currentCategory = category;
+            currentCardIndex = 0;
+            isFlipped = false;
+            
+            document.querySelectorAll('.category-tab').forEach(tab => {
+                tab.classList.remove('active');
+                tab.setAttribute('aria-selected', 'false');
+            });
+            event.target.classList.add('active');
+            event.target.setAttribute('aria-selected', 'true');
+            
+            updateCard();
+            updateCardInfo();
+            
+            document.getElementById('searchInput').value = '';
+            document.getElementById('definitionDisplay').innerHTML = '<div class="no-results">Select a category and search for medical terms, or browse the flashcards.</div>';
+        }
+
+        function updateCard() {
+            const currentTerms = medicalTermsByCategory[currentCategory];
+            const currentTerm = currentTerms[currentCardIndex];
+            
+            document.getElementById('cardDefinition').textContent = currentTerm.definition;
+            document.getElementById('cardTerm').textContent = currentTerm.term.charAt(0).toUpperCase() + currentTerm.term.slice(1);
+            
+            document.getElementById('flashcard').classList.remove('flipped');
+            isFlipped = false;
+            
+            document.getElementById('prevButton').disabled = currentCardIndex === 0;
+            document.getElementById('nextButton').disabled = currentCardIndex === currentTerms.length - 1;
+        }
+
+        function updateCardInfo() {
+            const currentTerms = medicalTermsByCategory[currentCategory];
+            const categoryNames = {
+                cardiovascular: 'Cardiovascular System',
+                respiratory: 'Respiratory System',
+                musculoskeletal: 'Musculoskeletal System',
+                neurology: 'Neurology',
+                dermatology: 'Dermatology',
+                gastroenterology: 'Gastroenterology'
+            };
+            
+            document.getElementById('stackTitle').textContent = categoryNames[currentCategory];
+            document.getElementById('cardCounter').textContent = `Card ${currentCardIndex + 1} of ${currentTerms.length}`;
+        }
+
+        function flipCard() {
+            const flashcard = document.getElementById('flashcard');
+            flashcard.classList.toggle('flipped');
+            isFlipped = !isFlipped;
+            
+            if (isFlipped) {
+                studyStats.cardsStudied++;
+                updateStudyStats();
+            }
+        }
+
+        function nextCard() {
+            const currentTerms = medicalTermsByCategory[currentCategory];
+            if (currentCardIndex < currentTerms.length - 1) {
+                currentCardIndex++;
+                updateCard();
+                updateCardInfo();
+            }
+        }
+
+        function previousCard() {
+            if (currentCardIndex > 0) {
+                currentCardIndex--;
+                updateCard();
+                updateCardInfo();
+            }
+        }
+
+        function updateStudyStats() {
+            document.getElementById('cardsStudied').textContent = studyStats.cardsStudied;
+            document.getElementById('correctAnswers').textContent = studyStats.correctAnswers;
+        }
+
+        function searchTerm() {
+            const searchInput = document.getElementById('searchInput');
+            const definitionDisplay = document.getElementById('definitionDisplay');
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            
+            if (searchTerm === '') {
+                definitionDisplay.innerHTML = '<div class="no-results">Select a category and search for medical terms, or browse the flashcards.</div>';
+                return;
+            }
+            
+            let foundTerm = null;
+            for (const category in medicalTermsByCategory) {
+                foundTerm = medicalTermsByCategory[category].find(term => term.term.toLowerCase() === searchTerm);
+                if (foundTerm) break;
+            }
+            
+            if (foundTerm) {
+                definitionDisplay.innerHTML = `
+                    <div class="term-title">${foundTerm.term.charAt(0).toUpperCase() + foundTerm.term.slice(1)}</div>
+                    <div class="definition-text">${foundTerm.definition}</div>
+                    <div class="example-text"><strong>Example:</strong> ${foundTerm.example}</div>
+                `;
+            } else {
+                let partialMatches = [];
+                for (const category in medicalTermsByCategory) {
+                    const matches = medicalTermsByCategory[category].filter(term => 
+                        term.term.toLowerCase().includes(searchTerm)
+                    );
+                    partialMatches = partialMatches.concat(matches);
+                }
+                
+                if (partialMatches.length > 0) {
+                    const suggestions = partialMatches.slice(0, 3).map(term => 
+                        `<div style="margin: 10px 0; padding: 10px; background: white; border-radius: 8px; cursor: pointer;" onclick="document.getElementById('searchInput').value='${term.term}'; searchTerm();">${term.term.charAt(0).toUpperCase() + term.term.slice(1)}</div>`
+                    ).join('');
+                    
+                    definitionDisplay.innerHTML = `
+                        <div class="no-results">Term not found. Did you mean:</div>
+                        ${suggestions}
+                    `;
+                } else {
+                    definitionDisplay.innerHTML = '<div class="no-results">Term not found. Try browsing different categories or check your spelling.</div>';
+                }
+            }
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', searchTerm);
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchTerm();
+            }
+        });
+
+        // Keyboard accessibility
+        document.getElementById('flashcard').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                flipCard();
+            }
+        });
+
+        // Initialize
+        updateCard();
+        updateCardInfo();
+        updateStudyStats();
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            switch(e.key) {
+                case 'ArrowLeft':
+                    previousCard();
+                    break;
+                case 'ArrowRight':
+                    nextCard();
+                    break;
+                case ' ':
+                    if (e.target.tagName !== 'INPUT') {
+                        e.preventDefault();
+                        flipCard();
+                    }
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>
