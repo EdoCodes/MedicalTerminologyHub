@@ -1,7 +1,29 @@
 {
   "name": "medical-terminology-hub",
+  "description": "Interactive medical terminology flashcards for medical students and healthcare professionals",
+  "version": "1.0.0",
+  "author": "Medical Terminology Hub Team",
+  "license": "MIT",
+  "keywords": [
+    "medical",
+    "terminology",
+    "flashcards",
+    "education",
+    "healthcare",
+    "medical-students",
+    "nursing",
+    "astro",
+    "tailwind"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/medical-terminology-hub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/medical-terminology-hub/issues"
+  },
+  "homepage": "https://enhanced-medical-edu-biqk.bolt.host",
   "type": "module",
-  "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
