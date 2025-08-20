@@ -5,6 +5,6 @@ export default defineConfig({
   integrations: [tailwind()],
   output: 'static',
   build: {
-    inlineStylesheets: 'never'
+    inlineStylesheets: 'auto'
   }
 });
