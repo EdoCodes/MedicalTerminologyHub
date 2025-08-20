@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/yourusername/medical-terminology-hub/issues"
   },
-  "homepage": "https://enhanced-medical-edu-biqk.bolt.host",
+  "homepage": "https://yourusername.github.io/medical-terminology-hub",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
