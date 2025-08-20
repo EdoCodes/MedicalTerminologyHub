@@ -1,0 +1,908 @@
+---
+// No server-side logic needed for this static site
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Medical Terminology Hub - Free Interactive Flashcards for Medical Students</title>
+    <meta name="description" content="Learn medical terminology with free interactive flashcards. 50+ medical terms across cardiovascular, respiratory, neurology, and more specialties. Perfect for medical students and healthcare professionals.">
+    <meta name="keywords" content="medical terminology, medical flashcards, medical education, healthcare learning, medical students, nursing students, medical terms, medical vocabulary, anatomy terms, medical abbreviations">
+    <meta name="author" content="Medical Terminology Hub">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://enhanced-medical-edu-biqk.bolt.host/">
+    <meta property="og:title" content="Medical Terminology Hub - Free Interactive Flashcards">
+    <meta property="og:description" content="Learn medical terminology with interactive flashcards. 50+ terms across multiple medical specialties. Free educational resource for medical students.">
+    <meta property="og:image" content="https://enhanced-medical-edu-biqk.bolt.host/medical-hub-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Medical Terminology Hub">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://enhanced-medical-edu-biqk.bolt.host/">
+    <meta property="twitter:title" content="Medical Terminology Hub - Free Interactive Flashcards">
+    <meta property="twitter:description" content="Learn medical terminology with interactive flashcards. 50+ terms across multiple medical specialties.">
+    <meta property="twitter:image" content="https://enhanced-medical-edu-biqk.bolt.host/medical-hub-preview.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://enhanced-medical-edu-biqk.bolt.host/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Medical Terminology Hub",
+      "description": "Free interactive medical terminology flashcards for medical students and healthcare professionals",
+      "url": "https://enhanced-medical-edu-biqk.bolt.host/",
+      "sameAs": [
+        "https://github.com/EdoCodes/MedicalTerminologyHub"
+      ],
+      "educationalLevel": "Higher Education",
+      "about": {
+        "@type": "Thing",
+        "name": "Medical Education"
+      },
+      "teaches": [
+        "Medical Terminology",
+        "Healthcare Vocabulary",
+        "Medical Abbreviations",
+        "Anatomy Terms"
+      ],
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": ["student", "healthcare professional", "medical student", "nursing student"]
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Background -->
+    <div class="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+        <!-- Header -->
+        <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-white/20 shadow-lg">
+            <div class="max-w-7xl mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 7.172V5L8 4z"></path>
+                            </svg>
+                        </div>
+                        <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                            Medical Terminology Hub
+                        </h1>
+                    </div>
+                    <nav class="hidden md:flex space-x-8">
+                        <a href="#flashcards" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Flashcards</a>
+                        <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</a>
+                        <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="pt-24 pb-12">
+            <div class="max-w-7xl mx-auto px-6">
+                <!-- Hero Section -->
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        Master Medical Terminology
+                        <span class="block text-3xl md:text-4xl bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mt-2">
+                            Interactive Learning Platform
+                        </span>
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        Learn essential medical terminology with our interactive flashcards. Perfect for medical students, nursing students, and healthcare professionals.
+                    </p>
+                </div>
+
+                <!-- Category Selection -->
+                <div class="backdrop-blur-md bg-white/70 rounded-2xl p-8 shadow-xl border border-white/20 mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Choose Your Specialty</h3>
+                    <div class="flex flex-wrap justify-center gap-4" id="categoryTabs">
+                        <button class="category-tab active" data-category="cardiovascular">
+                            <span class="text-2xl">❤️</span>
+                            <span>Cardiovascular</span>
+                        </button>
+                        <button class="category-tab" data-category="respiratory">
+                            <span class="text-2xl">🫁</span>
+                            <span>Respiratory</span>
+                        </button>
+                        <button class="category-tab" data-category="neurology">
+                            <span class="text-2xl">🧠</span>
+                            <span>Neurology</span>
+                        </button>
+                        <button class="category-tab" data-category="dermatology">
+                            <span class="text-2xl">🩺</span>
+                            <span>Dermatology</span>
+                        </button>
+                        <button class="category-tab" data-category="musculoskeletal">
+                            <span class="text-2xl">🦴</span>
+                            <span>Musculoskeletal</span>
+                        </button>
+                        <button class="category-tab" data-category="gastroenterology">
+                            <span class="text-2xl">🫃</span>
+                            <span>Gastroenterology</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Main Learning Interface -->
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Search Section -->
+                    <div class="lg:col-span-1">
+                        <div class="backdrop-blur-md bg-white/70 rounded-2xl p-6 shadow-xl border border-white/20 h-fit sticky top-32">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                </svg>
+                                Search Terms
+                            </h4>
+                            <input 
+                                type="text" 
+                                id="searchInput" 
+                                placeholder="Search medical terms..." 
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80 backdrop-blur-sm"
+                            >
+                            <div id="searchResults" class="mt-4 space-y-2 max-h-64 overflow-y-auto"></div>
+                        </div>
+                    </div>
+
+                    <!-- Flashcard Section -->
+                    <div class="lg:col-span-2">
+                        <div class="text-center mb-6">
+                            <div class="backdrop-blur-md bg-white/70 rounded-2xl p-4 shadow-xl border border-white/20 inline-block">
+                                <h4 id="categoryTitle" class="text-xl font-bold text-gray-900 mb-2">Cardiovascular System</h4>
+                                <p id="cardCounter" class="text-gray-600">Card 1 of 15</p>
+                            </div>
+                        </div>
+
+                        <!-- Flashcard -->
+                        <div class="flex justify-center mb-8">
+                            <div class="flashcard-container">
+                                <div id="flashcard" class="flashcard">
+                                    <div class="flashcard-inner">
+                                        <div class="flashcard-front">
+                                            <div class="card-content">
+                                                <div id="cardTerm" class="text-3xl font-bold text-gray-900 mb-4">Hypertension</div>
+                                                <div class="text-sm text-gray-500 mb-4">Medical Term</div>
+                                                <div class="text-blue-600 text-sm font-medium">Click to see definition</div>
+                                            </div>
+                                        </div>
+                                        <div class="flashcard-back">
+                                            <div class="card-content">
+                                                <div id="cardDefinition" class="text-lg text-gray-800 mb-4 leading-relaxed">
+                                                    High blood pressure; a condition in which the force of blood against artery walls is too high.
+                                                </div>
+                                                <div id="cardExample" class="text-sm text-gray-600 italic bg-blue-50 p-3 rounded-lg">
+                                                    Example: Regular exercise and a low-sodium diet can help manage hypertension.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation -->
+                        <div class="flex justify-center space-x-4 mb-8">
+                            <button id="prevButton" class="nav-button">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                                Previous
+                            </button>
+                            <button id="shuffleButton" class="shuffle-button">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                                </svg>
+                                Shuffle
+                            </button>
+                            <button id="nextButton" class="nav-button">
+                                Next
+                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Progress Section -->
+                        <div class="backdrop-blur-md bg-white/70 rounded-2xl p-6 shadow-xl border border-white/20">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                </svg>
+                                Study Progress
+                            </h4>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="text-center p-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl text-white">
+                                    <div id="cardsStudied" class="text-2xl font-bold">0</div>
+                                    <div class="text-sm opacity-90">Cards Studied</div>
+                                </div>
+                                <div class="text-center p-4 bg-gradient-to-r from-green-500 to-green-600 rounded-xl text-white">
+                                    <div id="correctAnswers" class="text-2xl font-bold">0</div>
+                                    <div class="text-sm opacity-90">Correct</div>
+                                </div>
+                                <div class="text-center p-4 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl text-white">
+                                    <div id="totalTerms" class="text-2xl font-bold">15</div>
+                                    <div class="text-sm opacity-90">Total Terms</div>
+                                </div>
+                                <div class="text-center p-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl text-white">
+                                    <div id="accuracy" class="text-2xl font-bold">0%</div>
+                                    <div class="text-sm opacity-90">Accuracy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEO Content Section -->
+                <section class="backdrop-blur-md bg-white/70 rounded-2xl p-8 shadow-xl border border-white/20 mt-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Learn Medical Terminology with Interactive Flashcards</h2>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        Master medical terminology with our comprehensive collection of interactive flashcards designed specifically for medical students, nursing students, and healthcare professionals. Our platform offers over 50 medical terms across multiple specialties including cardiovascular, respiratory, neurology, dermatology, musculoskeletal, and gastroenterology.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Why Choose Our Medical Terminology Hub?</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Our medical flashcards platform provides an engaging and effective way to learn medical vocabulary. Each term includes detailed definitions, clinical examples, and real-world usage scenarios that help students understand how medical terminology is applied in healthcare settings.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Medical Specialties Covered</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+                        <div class="bg-gradient-to-r from-red-50 to-red-100 p-4 rounded-xl border border-red-200">
+                            <strong class="text-red-700">Cardiovascular:</strong> Heart and circulation terms
+                        </div>
+                        <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-4 rounded-xl border border-blue-200">
+                            <strong class="text-blue-700">Respiratory:</strong> Lung and breathing terminology
+                        </div>
+                        <div class="bg-gradient-to-r from-purple-50 to-purple-100 p-4 rounded-xl border border-purple-200">
+                            <strong class="text-purple-700">Neurology:</strong> Brain and nervous system
+                        </div>
+                        <div class="bg-gradient-to-r from-green-50 to-green-100 p-4 rounded-xl border border-green-200">
+                            <strong class="text-green-700">Dermatology:</strong> Skin conditions and treatments
+                        </div>
+                        <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 p-4 rounded-xl border border-yellow-200">
+                            <strong class="text-yellow-700">Musculoskeletal:</strong> Bones, muscles, and joints
+                        </div>
+                        <div class="bg-gradient-to-r from-indigo-50 to-indigo-100 p-4 rounded-xl border border-indigo-200">
+                            <strong class="text-indigo-700">Gastroenterology:</strong> Digestive system disorders
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Features for Medical Students</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Our platform includes study progress tracking, quick reference guides for medical prefixes and suffixes, common medical abbreviations, and keyboard shortcuts for efficient studying. The responsive design ensures you can study on any device, whether you're in the library, clinic, or on the go.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Perfect for Healthcare Education</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Whether you're a pre-med student, nursing student, medical assistant, or healthcare professional looking to refresh your knowledge, our medical terminology flashcards provide a solid foundation in healthcare vocabulary. The interactive format makes learning engaging and helps improve retention of complex medical terms.
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <style>
+        /* Category Tabs */
+        .category-tab {
+            @apply flex flex-col items-center space-y-2 px-6 py-4 bg-white/50 backdrop-blur-sm rounded-xl border border-white/30 transition-all duration-300 hover:bg-white/70 hover:shadow-lg cursor-pointer;
+        }
+
+        .category-tab.active {
+            @apply bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-lg transform scale-105;
+        }
+
+        .category-tab span:last-child {
+            @apply text-sm font-medium;
+        }
+
+        /* Flashcard Styles */
+        .flashcard-container {
+            perspective: 1000px;
+            width: 400px;
+            height: 280px;
+        }
+
+        .flashcard {
+            @apply relative w-full h-full cursor-pointer;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flashcard.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-inner {
+            @apply relative w-full h-full;
+            transform-style: preserve-3d;
+        }
+
+        .flashcard-front,
+        .flashcard-back {
+            @apply absolute w-full h-full rounded-2xl shadow-2xl border border-white/30;
+            backface-visibility: hidden;
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%);
+            backdrop-filter: blur(20px);
+        }
+
+        .flashcard-back {
+            transform: rotateY(180deg);
+        }
+
+        .card-content {
+            @apply flex flex-col items-center justify-center h-full p-8 text-center;
+        }
+
+        /* Navigation Buttons */
+        .nav-button {
+            @apply flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl font-medium transition-all duration-200 hover:from-blue-600 hover:to-indigo-700 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed;
+        }
+
+        .shuffle-button {
+            @apply flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-xl font-medium transition-all duration-200 hover:from-purple-600 hover:to-pink-700 hover:shadow-lg;
+        }
+
+        /* Search Results */
+        .search-result-item {
+            @apply p-3 bg-white/60 backdrop-blur-sm rounded-lg border border-white/30 cursor-pointer transition-all duration-200 hover:bg-white/80 hover:shadow-md;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .flashcard-container {
+                width: 320px;
+                height: 240px;
+            }
+            
+            .card-content {
+                @apply p-6;
+            }
+            
+            #cardTerm {
+                @apply text-2xl;
+            }
+        }
+
+        /* Utility Classes */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+
+    <script>
+        // Medical Terms Database
+        const medicalTermsByCategory = {
+            cardiovascular: [
+                {
+                    term: "Hypertension",
+                    definition: "High blood pressure; a condition in which the force of blood against artery walls is too high.",
+                    example: "Regular exercise and a low-sodium diet can help manage hypertension.",
+                    difficulty: "Basic"
+                },
+                {
+                    term: "Tachycardia",
+                    definition: "A rapid heart rate, typically defined as over 100 beats per minute in adults.",
+                    example: "The patient experienced tachycardia during the stress test, with a heart rate of 120 bpm.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Bradycardia",
+                    definition: "A slower than normal heart rate, typically under 60 beats per minute in adults.",
+                    example: "Athletes often have bradycardia due to their excellent cardiovascular conditioning.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Myocardial Infarction",
+                    definition: "A heart attack; occurs when blood flow decreases or stops to a part of the heart, causing damage to the heart muscle.",
+                    example: "The patient was rushed to the emergency room with symptoms of acute myocardial infarction.",
+                    difficulty: "Advanced"
+                },
+                {
+                    term: "Angina",
+                    definition: "Chest pain caused by reduced blood flow to the heart muscles.",
+                    example: "The patient experienced angina pectoris during physical exertion.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Atrial Fibrillation",
+                    definition: "Irregular, rapid heartbeat that can lead to poor blood circulation.",
+                    example: "Atrial fibrillation increases the risk of stroke and requires anticoagulation therapy.",
+                    difficulty: "Advanced"
+                },
+                {
+                    term: "Ischemia",
+                    definition: "Inadequate blood supply to an organ or part of the body.",
+                    example: "Myocardial ischemia can lead to chest pain and heart muscle damage.",
+                    difficulty: "Advanced"
+                },
+                {
+                    term: "Thrombosis",
+                    definition: "The formation of a blood clot inside a blood vessel.",
+                    example: "Deep vein thrombosis in the leg can lead to pulmonary embolism.",
+                    difficulty: "Advanced"
+                },
+                {
+                    term: "Palpitation",
+                    definition: "The feeling of having a fast-beating, fluttering, or pounding heart.",
+                    example: "The patient reported palpitations during episodes of anxiety.",
+                    difficulty: "Basic"
+                },
+                {
+                    term: "Syncope",
+                    definition: "A temporary loss of consciousness due to insufficient blood flow to the brain.",
+                    example: "Vasovagal syncope is the most common cause of fainting episodes.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Arrhythmia",
+                    definition: "An irregular heartbeat that can be too fast, too slow, or erratic.",
+                    example: "The ECG revealed a ventricular arrhythmia requiring immediate treatment.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Stenosis",
+                    definition: "Abnormal narrowing of a blood vessel or other tubular organ.",
+                    example: "Aortic stenosis can cause chest pain and shortness of breath.",
+                    difficulty: "Advanced"
+                },
+                {
+                    term: "Embolism",
+                    definition: "Blockage of an artery by a clot or air bubble.",
+                    example: "Pulmonary embolism is a life-threatening condition requiring immediate treatment.",
+                    difficulty: "Advanced"
+                },
+                {
+                    term: "Cardiomyopathy",
+                    definition: "Disease of the heart muscle that makes it harder for the heart to pump blood.",
+                    example: "Dilated cardiomyopathy can lead to heart failure if left untreated.",
+                    difficulty: "Advanced"
+                },
+                {
+                    term: "Endocarditis",
+                    definition: "Inflammation of the inner lining of the heart chambers and valves.",
+                    example: "Bacterial endocarditis requires prolonged antibiotic therapy.",
+                    difficulty: "Advanced"
+                }
+            ],
+            respiratory: [
+                {
+                    term: "Pneumonia",
+                    definition: "An infection that inflames air sacs in one or both lungs, which may fill with fluid.",
+                    example: "Bacterial pneumonia often requires antibiotic treatment and hospitalization.",
+                    difficulty: "Basic"
+                },
+                {
+                    term: "Asthma",
+                    definition: "A respiratory condition marked by attacks of spasm in the bronchi of the lungs, causing difficulty in breathing.",
+                    example: "The child's asthma was triggered by exposure to dust mites and pollen.",
+                    difficulty: "Basic"
+                },
+                {
+                    term: "Bronchitis",
+                    definition: "Inflammation of the lining of bronchial tubes, causing cough and mucus production.",
+                    example: "Acute bronchitis is often caused by viral infections and resolves within weeks.",
+                    difficulty: "Basic"
+                },
+                {
+                    term: "Dyspnea",
+                    definition: "Difficulty breathing or shortness of breath.",
+                    example: "The patient complained of dyspnea when climbing stairs.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Cyanosis",
+                    definition: "A bluish discoloration of the skin due to lack of oxygen in the blood.",
+                    example: "The newborn showed cyanosis around the lips, indicating possible heart problems.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Emphysema",
+                    definition: "A lung condition causing shortness of breath due to damaged air sacs.",
+                    example: "Smoking is the leading cause of emphysema in adults.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Pleural Effusion",
+                    definition: "Excess fluid accumulation in the pleural space around the lungs.",
+                    example: "The chest X-ray showed pleural effusion on the right side.",
+                    difficulty: "Advanced"
+                },
+                {
+                    term: "Pneumothorax",
+                    definition: "Collapsed lung caused by air leaking into the space between lung and chest wall.",
+                    example: "Spontaneous pneumothorax is more common in tall, thin young men.",
+                    difficulty: "Advanced"
+                }
+            ],
+            neurology: [
+                {
+                    term: "Stroke",
+                    definition: "Sudden interruption of blood supply to the brain, causing brain cell death.",
+                    example: "Quick treatment is crucial for stroke patients to minimize brain damage.",
+                    difficulty: "Basic"
+                },
+                {
+                    term: "Seizure",
+                    definition: "Sudden, uncontrolled electrical disturbance in the brain.",
+                    example: "Epileptic seizures can vary from brief lapses to violent convulsions.",
+                    difficulty: "Basic"
+                },
+                {
+                    term: "Migraine",
+                    definition: "Severe recurring headache often accompanied by nausea and light sensitivity.",
+                    example: "Migraine attacks can last from hours to days.",
+                    difficulty: "Basic"
+                },
+                {
+                    term: "Aphasia",
+                    definition: "Loss of ability to understand or express speech, caused by brain damage.",
+                    example: "Post-stroke aphasia can affect both speech production and comprehension.",
+                    difficulty: "Advanced"
+                },
+                {
+                    term: "Ataxia",
+                    definition: "Lack of muscle coordination, especially during voluntary movements.",
+                    example: "Cerebellar ataxia affects balance and coordination.",
+                    difficulty: "Advanced"
+                },
+                {
+                    term: "Neuropathy",
+                    definition: "Damage or dysfunction of peripheral nerves, causing numbness and pain.",
+                    example: "Diabetic neuropathy commonly affects the feet and hands.",
+                    difficulty: "Intermediate"
+                }
+            ],
+            dermatology: [
+                {
+                    term: "Dermatitis",
+                    definition: "Inflammation of the skin causing redness, swelling, and itching.",
+                    example: "Contact dermatitis can be caused by allergens or irritants.",
+                    difficulty: "Basic"
+                },
+                {
+                    term: "Melanoma",
+                    definition: "The most serious type of skin cancer that develops in melanocytes.",
+                    example: "Early detection of melanoma significantly improves treatment outcomes.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Psoriasis",
+                    definition: "Autoimmune skin condition causing scaly, red patches.",
+                    example: "Plaque psoriasis is the most common form of this condition.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Eczema",
+                    definition: "A group of conditions that cause skin to become red, itchy, and inflamed.",
+                    example: "Atopic eczema often begins in childhood and may persist into adulthood.",
+                    difficulty: "Basic"
+                },
+                {
+                    term: "Urticaria",
+                    definition: "Hives; raised, itchy welts on the skin often caused by allergic reactions.",
+                    example: "Acute urticaria typically resolves within 24 hours.",
+                    difficulty: "Intermediate"
+                }
+            ],
+            musculoskeletal: [
+                {
+                    term: "Arthritis",
+                    definition: "Inflammation of one or more joints, causing pain and stiffness that can worsen with age.",
+                    example: "The patient was diagnosed with rheumatoid arthritis after experiencing joint pain for several months.",
+                    difficulty: "Basic"
+                },
+                {
+                    term: "Osteoporosis",
+                    definition: "A bone disease that occurs when the body loses too much bone or makes too little bone.",
+                    example: "Post-menopausal women are at higher risk for developing osteoporosis.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Fracture",
+                    definition: "A break in a bone caused by trauma or disease.",
+                    example: "The X-ray revealed a spiral fracture of the tibia.",
+                    difficulty: "Basic"
+                },
+                {
+                    term: "Tendinitis",
+                    definition: "Inflammation of a tendon, causing pain and tenderness.",
+                    example: "Tennis elbow is a common form of tendinitis affecting the lateral epicondyle.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Bursitis",
+                    definition: "Inflammation of the fluid-filled sacs (bursae) that cushion joints.",
+                    example: "Shoulder bursitis can cause pain and limited range of motion.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Scoliosis",
+                    definition: "Abnormal lateral curvature of the spine.",
+                    example: "Adolescent idiopathic scoliosis is the most common form.",
+                    difficulty: "Intermediate"
+                }
+            ],
+            gastroenterology: [
+                {
+                    term: "Gastritis",
+                    definition: "Inflammation of the stomach lining, causing pain and digestive issues.",
+                    example: "Chronic gastritis can be caused by H. pylori bacteria or prolonged NSAID use.",
+                    difficulty: "Basic"
+                },
+                {
+                    term: "Jaundice",
+                    definition: "Yellowing of the skin and eyes due to high levels of bilirubin in the blood.",
+                    example: "Neonatal jaundice is common in newborns and usually resolves without treatment.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Appendicitis",
+                    definition: "Inflammation of the appendix requiring surgical removal.",
+                    example: "Acute appendicitis typically begins with periumbilical pain.",
+                    difficulty: "Intermediate"
+                },
+                {
+                    term: "Cirrhosis",
+                    definition: "Scarring of the liver caused by long-term liver damage.",
+                    example: "Alcoholic cirrhosis is a leading cause of liver transplantation.",
+                    difficulty: "Advanced"
+                },
+                {
+                    term: "Peptic Ulcer",
+                    definition: "Open sores that develop on the inner lining of the stomach or small intestine.",
+                    example: "Most peptic ulcers are caused by H. pylori bacteria or NSAIDs.",
+                    difficulty: "Intermediate"
+                }
+            ]
+        };
+
+        // Application State
+        let currentCategory = 'cardiovascular';
+        let currentCardIndex = 0;
+        let isFlipped = false;
+        let studyStats = {
+            cardsStudied: 0,
+            correctAnswers: 0
+        };
+
+        // Initialize the application
+        function initializeApp() {
+            updateCard();
+            updateCardInfo();
+            updateStudyStats();
+            setupEventListeners();
+        }
+
+        // Event Listeners Setup
+        function setupEventListeners() {
+            // Category tabs
+            document.querySelectorAll('.category-tab').forEach(tab => {
+                tab.addEventListener('click', () => switchCategory(tab.dataset.category));
+            });
+
+            // Flashcard click
+            document.getElementById('flashcard').addEventListener('click', flipCard);
+
+            // Navigation buttons
+            document.getElementById('prevButton').addEventListener('click', previousCard);
+            document.getElementById('nextButton').addEventListener('click', nextCard);
+            document.getElementById('shuffleButton').addEventListener('click', shuffleCards);
+
+            // Search functionality
+            document.getElementById('searchInput').addEventListener('input', handleSearch);
+
+            // Keyboard shortcuts
+            document.addEventListener('keydown', handleKeyboard);
+        }
+
+        // Category switching
+        function switchCategory(category) {
+            currentCategory = category;
+            currentCardIndex = 0;
+            isFlipped = false;
+            
+            // Update active tab
+            document.querySelectorAll('.category-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelector(`[data-category="${category}"]`).classList.add('active');
+            
+            updateCard();
+            updateCardInfo();
+            clearSearch();
+        }
+
+        // Card management
+        function updateCard() {
+            const currentTerms = medicalTermsByCategory[currentCategory];
+            const currentTerm = currentTerms[currentCardIndex];
+            
+            document.getElementById('cardTerm').textContent = currentTerm.term;
+            document.getElementById('cardDefinition').textContent = currentTerm.definition;
+            document.getElementById('cardExample').textContent = `Example: ${currentTerm.example}`;
+            
+            // Reset flip state
+            document.getElementById('flashcard').classList.remove('flipped');
+            isFlipped = false;
+            
+            // Update navigation buttons
+            document.getElementById('prevButton').disabled = currentCardIndex === 0;
+            document.getElementById('nextButton').disabled = currentCardIndex === currentTerms.length - 1;
+        }
+
+        function updateCardInfo() {
+            const currentTerms = medicalTermsByCategory[currentCategory];
+            const categoryNames = {
+                cardiovascular: 'Cardiovascular System',
+                respiratory: 'Respiratory System',
+                musculoskeletal: 'Musculoskeletal System',
+                neurology: 'Neurology',
+                dermatology: 'Dermatology',
+                gastroenterology: 'Gastroenterology'
+            };
+            
+            document.getElementById('categoryTitle').textContent = categoryNames[currentCategory];
+            document.getElementById('cardCounter').textContent = `Card ${currentCardIndex + 1} of ${currentTerms.length}`;
+            document.getElementById('totalTerms').textContent = currentTerms.length;
+        }
+
+        function flipCard() {
+            const flashcard = document.getElementById('flashcard');
+            flashcard.classList.toggle('flipped');
+            isFlipped = !isFlipped;
+            
+            if (isFlipped && !flashcard.dataset.studied) {
+                studyStats.cardsStudied++;
+                flashcard.dataset.studied = 'true';
+                updateStudyStats();
+            }
+        }
+
+        function nextCard() {
+            const currentTerms = medicalTermsByCategory[currentCategory];
+            if (currentCardIndex < currentTerms.length - 1) {
+                currentCardIndex++;
+                updateCard();
+                updateCardInfo();
+            }
+        }
+
+        function previousCard() {
+            if (currentCardIndex > 0) {
+                currentCardIndex--;
+                updateCard();
+                updateCardInfo();
+            }
+        }
+
+        function shuffleCards() {
+            const currentTerms = medicalTermsByCategory[currentCategory];
+            
+            // Fisher-Yates shuffle
+            for (let i = currentTerms.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [currentTerms[i], currentTerms[j]] = [currentTerms[j], currentTerms[i]];
+            }
+            
+            currentCardIndex = 0;
+            updateCard();
+            updateCardInfo();
+        }
+
+        function updateStudyStats() {
+            document.getElementById('cardsStudied').textContent = studyStats.cardsStudied;
+            document.getElementById('correctAnswers').textContent = studyStats.correctAnswers;
+            
+            const accuracy = studyStats.cardsStudied > 0 ? 
+                Math.round((studyStats.correctAnswers / studyStats.cardsStudied) * 100) : 0;
+            document.getElementById('accuracy').textContent = `${accuracy}%`;
+        }
+
+        // Search functionality
+        function handleSearch(event) {
+            const searchTerm = event.target.value.toLowerCase().trim();
+            const searchResults = document.getElementById('searchResults');
+            
+            if (searchTerm === '') {
+                searchResults.innerHTML = '';
+                return;
+            }
+            
+            let allMatches = [];
+            
+            // Search across all categories
+            Object.entries(medicalTermsByCategory).forEach(([category, terms]) => {
+                terms.forEach((term, index) => {
+                    if (term.term.toLowerCase().includes(searchTerm) || 
+                        term.definition.toLowerCase().includes(searchTerm)) {
+                        allMatches.push({ ...term, category, index });
+                    }
+                });
+            });
+            
+            if (allMatches.length > 0) {
+                searchResults.innerHTML = allMatches.slice(0, 5).map(match => `
+                    <div class="search-result-item" onclick="goToTerm('${match.category}', ${match.index})">
+                        <div class="font-semibold text-gray-900">${match.term}</div>
+                        <div class="text-sm text-gray-600 truncate">${match.definition}</div>
+                    </div>
+                `).join('');
+            } else {
+                searchResults.innerHTML = '<div class="text-gray-500 text-sm p-3">No terms found</div>';
+            }
+        }
+
+        function goToTerm(category, index) {
+            switchCategory(category);
+            currentCardIndex = index;
+            updateCard();
+            updateCardInfo();
+            clearSearch();
+        }
+
+        function clearSearch() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('searchResults').innerHTML = '';
+        }
+
+        // Keyboard shortcuts
+        function handleKeyboard(event) {
+            if (event.target.tagName === 'INPUT') return;
+            
+            switch(event.key) {
+                case 'ArrowLeft':
+                    event.preventDefault();
+                    previousCard();
+                    break;
+                case 'ArrowRight':
+                    event.preventDefault();
+                    nextCard();
+                    break;
+                case ' ':
+                case 'Enter':
+                    event.preventDefault();
+                    flipCard();
+                    break;
+                case 's':
+                case 'S':
+                    event.preventDefault();
+                    shuffleCards();
+                    break;
+            }
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', initializeApp);
+    </script>
+</body>
+</html>
