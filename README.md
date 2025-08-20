@@ -44,7 +44,7 @@ A comprehensive, interactive medical terminology learning platform designed for 
 
 ## 🚀 Live Demo
 
-Visit the live application: [Medical Terminology Hub](https://enhanced-medical-edu-biqk.bolt.host)
+Visit the live application: [Medical Terminology Hub](https://medicalterminologycode.netlify.app)
 
 ## 🛠️ Technology Stack
 

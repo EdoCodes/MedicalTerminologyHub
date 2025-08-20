@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/yourusername/medical-terminology-hub/issues"
   },
-  "homepage": "https://yourusername.github.io/medical-terminology-hub",
+  "homepage": "https://medicalterminologycode.netlify.app",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
